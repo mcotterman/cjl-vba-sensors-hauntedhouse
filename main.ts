@@ -426,14 +426,14 @@ let vbaRanOnce = false;
 // let distance = -1;
 
 
-for (let i = 0; i < 3; i++) {
-    controlLed("1", 100)
-    controlTriLed('*', 100, 100, 100)
-    basic.pause(300)
-    controlLed("1", 0)
-    controlTriLed('*', 0, 0, 0)
-    basic.pause(300)
-}
+// for (let i = 0; i < 3; i++) {
+//     controlLed("1", 100)
+//     controlTriLed('*', 100, 100, 100)
+//     basic.pause(300)
+//     controlLed("1", 0)
+//     controlTriLed('*', 0, 0, 0)
+//     basic.pause(300)
+// }
 
 function returnEmptyCmdVars() {
     // return [[{
@@ -701,13 +701,13 @@ if (isVba) {
     });
 
     // Group 2 - Forever
-    basic.forever(function () {
-        if (isRunning && vbaRanOnce) {
-            handleVba(2);
-        } else {
-            basic.pause(500);
-        }
-    });
+    // basic.forever(function () {
+    //     if (isRunning && vbaRanOnce) {
+    //         handleVba(2);
+    //     } else {
+    //         basic.pause(500);
+    //     }
+    // });
 
     // Group 4 - On Shake
     // input.onGesture(Gesture.Shake, function () {
